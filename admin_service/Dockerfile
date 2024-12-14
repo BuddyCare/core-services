@@ -1,5 +1,5 @@
 FROM golang:1.22-alpine AS builder
-ARG BINARY_NAME="admin_service_binary"
+ENV BINARY_NAME="admin_service_binary"
 WORKDIR /app
 COPY . .
 RUN go mod download
